@@ -1,7 +1,7 @@
 // Sidebar menu tabs
 
 $(document).on("click", ".menu-nav__item", function() {
-	var numberIndex = $(this).index();
+	let numberIndex = $(this).index();
 
 	if (!$(this).is("active")) {
 		$(".menu-nav__item").removeClass("active");
@@ -10,7 +10,7 @@ $(document).on("click", ".menu-nav__item", function() {
 		$(this).addClass("active");
 		$(".content-list").find(".content-list__item:eq(" + numberIndex + ")").addClass("active");
 
-		var listItemHeight = $(".content-list")
+		let listItemHeight = $(".content-list")
 			.find(".content-list__item:eq(" + numberIndex + ")")
 			.innerHeight();
 		$(".content-list").height(listItemHeight + "px");
@@ -48,16 +48,44 @@ $('.menu-collapsed').on('click', function() {
 // Show/hide new template block
 
 $('.header-template__button').on('click', function() {
-	$('.templates-new').addClass('active');
-	$('.templates__wrapper').addClass('hidden');
+    if($(this).hasClass('header-template__button_template')) {
+        $('.templates-new_template').addClass('active');
+        $('.templates__wrapper_template').addClass('hidden');
+    }
+    if($(this).hasClass('header-template__button_company')) {
+        $('.templates-new_company').addClass('active');
+        $('.templates__wrapper_company').addClass('hidden');
+    }
+});
+$('.edits__item_edit').on('click', function() {
+    if($(this).hasClass('edits__item_template')) {
+        $('.templates-new_template').addClass('active');
+        $('.templates__wrapper_template').addClass('hidden');
+    }
+    if($(this).hasClass('edits__item_company')) {
+        $('.templates-new_company').addClass('active');
+        $('.templates__wrapper_company').addClass('hidden');
+    }
 });
 $('.button_save').on('click', function() {
-	$('.templates-new').removeClass('active');
-	$('.templates__wrapper').removeClass('hidden');
+    if($(this).hasClass('button_template')) {
+        $('.templates-new_template').removeClass('active');
+        $('.templates__wrapper_template').removeClass('hidden');
+    }
+    if($(this).hasClass('button_company')) {
+        $('.templates-new_company').removeClass('active');
+        $('.templates__wrapper_company').removeClass('hidden');
+    }
 });
-$('.button_template-more').on('click', function() {
-	$('.templates-new').addClass('active');
-	$('.templates__wrapper').addClass('hidden');
+$('.button-reset').on('click', function() {
+    if($(this).hasClass('button-reset_template')) {
+        $('.templates-new_template').addClass('active');
+        $('.templates__wrapper_template').addClass('hidden');
+    }
+    if($(this).hasClass('button-reset_company')) {
+        $('.templates-new_company').addClass('active');
+        $('.templates__wrapper_company').addClass('hidden');
+    }
 });
 
 // Custom date field
@@ -83,14 +111,14 @@ $(".template-form__input_date").flatpickr({
 
 (function (document, window, index){
     'use strict';
-    var inputs = document.querySelectorAll('.inputfile');
-    var spanInput = document.querySelector('.upload-name');
-	var textUpload = document.querySelector('.upload-text');
+    let inputs = document.querySelectorAll('.inputfile');
+    let spanInput = document.querySelector('.upload-name');
+	let textUpload = document.querySelector('.upload-text');
     Array.prototype.forEach.call(inputs, function (input) {
-        var label = input.nextElementSibling,
+        let label = input.nextElementSibling,
                 labelVal = label.innerHTML;        
         input.addEventListener('change', function (e) {
-            var fileName = '';
+            let fileName = '';
             //if (spanInput.innerText == fileName) {
                 spanInput.classList.add('upload-name_active');
                 textUpload.style.display = 'none';                
@@ -127,6 +155,13 @@ dropBtn.forEach((el) => {
         let button = el.getElementsByClassName('edits__item_info')[0];
         button.classList.toggle('edits__item_close');
     }
+});
+
+// Add row to archieve
+jQuery(($) => {
+    $(".edits__item_delete").on("click", function () {
+        $(this).parent().parent().parent().addClass("archieve");
+    });
 });
 
 // Custom geo select
