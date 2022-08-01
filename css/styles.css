@@ -282,7 +282,7 @@ input:focus:-ms-input-placeholder {
     background: -webkit-linear-gradient(-90deg, rgb(58, 63, 108, 0.3), rgb(196, 196, 196, 0.3));
     background: -moz-linear-gradient(-90deg, rgb(58, 63, 108, 0.3), rgb(196, 196, 196, 0.3));
     background: linear-gradient(-90deg, rgb(58, 63, 108, 0.3), rgb(196, 196, 196, 0.3));
-    background-size: 145px;
+    background-size: 145px 70px;
     background-repeat: no-repeat;
 }
 .content-list {

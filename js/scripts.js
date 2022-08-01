@@ -182,8 +182,10 @@ jQuery(($) => {
     $(".select").on("click", ".select__item", function () {
         $(".select__head").removeClass("open");
         $(this).parent().fadeOut();
-        $(this).parent().prev().text($(this).text());
-        $(this).parent().prev().prev().val($(this).text());        
+        var imageSelect = $(this).children('.select__image').attr('src');
+        $(this).parent().prev().find('.select__image').attr('src', `${imageSelect}`);
+        $(this).parent().prev().find('.select__text').text($(this).text());
+        $(this).parent().prev().prev().val($(this).text());
     });
 
     $(document).click(function (e) {
