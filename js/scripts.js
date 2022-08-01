@@ -41,7 +41,7 @@ $('.menu-collapsed').on('click', function() {
     $('.menu-user__info').addClass('show-flex');
     $('.menu-nav__text').removeClass('hide');
     $('.menu-nav__text').addClass('show');
-    $('.sidebar-menu').css('width', '259px');
+    $('.sidebar-menu').css('width', '200px');
     $('.sidebar-menu__logo').attr('src', 'images/icons/logo.svg').removeClass('sidebar-menu__logo_collapse');
 });
 
@@ -158,10 +158,13 @@ dropBtn.forEach((el) => {
 });
 
 // Add row to archieve
-jQuery(($) => {
-    $(".edits__item_delete").on("click", function () {
-        $(this).parent().parent().parent().addClass("archieve");
-    });
+$(".edits__item_delete").on("click", function () {
+    $(this).parent().parent().parent().addClass("archieve");
+});
+
+// Show arrows in table-cell
+$(".table-cell_arrows").on("click", function () {
+    $(this).children('.arrows').css('display', 'block');
 });
 
 // Custom geo select
@@ -182,9 +185,12 @@ jQuery(($) => {
     $(".select").on("click", ".select__item", function () {
         $(".select__head").removeClass("open");
         $(this).parent().fadeOut();
-        var imageSelect = $(this).children('.select__image').attr('src');
+        let imageSelect = $(this).children('.select__image').attr('src');
         $(this).parent().prev().find('.select__image').attr('src', `${imageSelect}`);
         $(this).parent().prev().find('.select__text').text($(this).text());
+        if ($(this).parent().hasClass("select__list_niche")) {
+            $(this).parent().prev().text($(this).text());
+        }        
         $(this).parent().prev().prev().val($(this).text());
     });
 
@@ -194,4 +200,15 @@ jQuery(($) => {
             $(".select__list").fadeOut();
         }
     });
+
+    $(".select").on("click", ".select__plus", function () {
+        let addValue = $(this).prev().val();
+        $(`<li class="select__item select__item_niche">${addValue}</li>`).insertBefore('.select__field_add');
+        $(this).prev().val("Введите сюда название новой ниши которую хотите создать");
+    });
+
+    $( ".select__input" ).focus(function() {
+        $(this).val('');
+    });
+        
 });
