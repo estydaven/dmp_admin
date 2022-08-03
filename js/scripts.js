@@ -2,6 +2,8 @@
 
 $(document).on("click", ".menu-nav__item", function() {
 	let numberIndex = $(this).index();
+    $(".templates-new").removeClass("active");
+    $(".templates__wrapper").removeClass("hidden");
 
 	if (!$(this).is("active")) {
 		$(".menu-nav__item").removeClass("active");
@@ -199,16 +201,6 @@ jQuery(($) => {
             $(".select__head").removeClass("open");
             $(".select__list").fadeOut();
         }
-    });
-
-    $(".select").on("click", ".select__plus", function () {
-        let addValue = $(this).prev().val();
-        $(`<li class="select__item select__item_niche">${addValue}</li>`).insertBefore('.select__field_add');
-        $(this).prev().val("Введите сюда название новой ниши которую хотите создать");
-    });
-
-    $( ".select__input" ).focus(function() {
-        $(this).val('');
     });
         
 });

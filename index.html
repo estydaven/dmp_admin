@@ -15,44 +15,46 @@
     <div class="wrapper">
         <nav class="sidebar-menu">
             <img src="images/icons/logo.svg" alt="" class="sidebar-menu__logo">
-            <div class="menu-user">
-                <div class="menu-user__image">
-                    <img src="images/icons/menu-admin.svg" alt="" class="menu-user__icon">
-                </div>                
-                <div class="menu-user__info">
-                    <p class="menu-user__head">Administrator</p>
-                    <p class="wallet"><span class="wallet__sum">1 543 000</span>
-                        <span class="wallet__currency">р.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="menu-nav">
-                    <div class="menu-nav__item active">
-                        <img src="images/icons/menu-users.svg" alt="" class="menu-nav__icon">
-                        <span class="menu-nav__text">Пользователи</span>
+            <div class="sidebar-menu__inner">                
+                <div class="menu-user">
+                    <div class="menu-user__image">
+                        <img src="images/icons/menu-admin.svg" alt="" class="menu-user__icon">
+                    </div>                
+                    <div class="menu-user__info">
+                        <p class="menu-user__head">Administrator</p>
+                        <p class="wallet"><span class="wallet__sum">1 543 000</span>
+                            <span class="wallet__currency">р.</span>
+                        </p>
                     </div>
-                    <div class="menu-nav__item">
-                        <img src="images/icons/menu-template.svg" alt="" class="menu-nav__icon">
-                        <span class="menu-nav__text">Шаблоны</span>
-                    </div>
-                    <div class="menu-nav__item">
-                        <img src="images/icons/menu-companies.svg" alt="" class="menu-nav__icon">
-                        <span class="menu-nav__text">Компании</span></div>
-                    <div class="menu-nav__item">
-                        <img src="images/icons/menu-stats.svg" alt="" class="menu-nav__icon">
-                        <span class="menu-nav__text">Статистика</span></div>
-                    <div class="menu-nav__item">
-                        <img src="images/icons/menu-tokens.svg" alt="" class="menu-nav__icon">
-                        <span class="menu-nav__text">Токены</span></div>
                 </div>
-            </div>
-            <div class="menu-collapse">
-                <img src="images/icons/arr-menu.svg" alt="" class="menu-collapse__icon">
-                <span class="menu-collapse__text">Свернуть меню</span>
-            </div>
-            <div class="menu-collapsed">
-                <img src="images/icons/arr-menu-collapse.svg" alt="" class="menu-collapse__icon">
+                <div class="menu">
+                    <div class="menu-nav">
+                        <div class="menu-nav__item active">
+                            <img src="images/icons/menu-users.svg" alt="" class="menu-nav__icon">
+                            <span class="menu-nav__text">Пользователи</span>
+                        </div>
+                        <div class="menu-nav__item">
+                            <img src="images/icons/menu-template.svg" alt="" class="menu-nav__icon">
+                            <span class="menu-nav__text">Шаблоны</span>
+                        </div>
+                        <div class="menu-nav__item">
+                            <img src="images/icons/menu-companies.svg" alt="" class="menu-nav__icon">
+                            <span class="menu-nav__text">Компании</span></div>
+                        <div class="menu-nav__item">
+                            <img src="images/icons/menu-stats.svg" alt="" class="menu-nav__icon">
+                            <span class="menu-nav__text">Статистика</span></div>
+                        <div class="menu-nav__item">
+                            <img src="images/icons/menu-tokens.svg" alt="" class="menu-nav__icon">
+                            <span class="menu-nav__text">Токены</span></div>
+                    </div>
+                </div>
+                <div class="menu-collapse">
+                    <img src="images/icons/arr-menu.svg" alt="" class="menu-collapse__icon">
+                    <span class="menu-collapse__text">Свернуть меню</span>
+                </div>
+                <div class="menu-collapsed">
+                    <img src="images/icons/arr-menu-collapse.svg" alt="" class="menu-collapse__icon">
+                </div>
             </div>
         </nav>
         <div class="content">
@@ -65,9 +67,14 @@
                                 <button class="button button_green button_new-user">Создать пользователя</button>
                                 <div class="filter">
                                     <p class="filter__text">Фильтровать</p>
-                                    <select class="filter-select">
-                                        <option value="" class="filter-select__option">Роль</option>
-                                    </select>
+                                    <div class="select select_filter select_role">
+                                        <input class="select__inp" type="hidden" name="">
+                                        <div class="select__head select__head_filter template-form__select">Роль</div>
+                                        <div class="select__list select__list_niche" style="display: none;">
+                                            <div class="select__item select__item_niche">Роль 2</div>
+                                            <div class="select__item select__item_niche">Роль 3</div>
+                                        </div>
+                                    </div> 
                                 </div>
                                 <button class="button button_gray">Применить</button>
                             </div>
@@ -133,13 +140,13 @@
                                     <p class="table-cell__text">2</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">test@adclever.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">Admin</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Редактор новостей</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -157,13 +164,13 @@
                                     <p class="table-cell__text">3</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">vegan@adclever.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">Flexa</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Рекламодатель</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -181,13 +188,13 @@
                                     <p class="table-cell__text">4</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">ad@test.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">AlexanderGreat</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Аналитик</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -205,13 +212,13 @@
                                     <p class="table-cell__text">5</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">admin@mail.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">ValyaM</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Веб мастер</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -229,13 +236,13 @@
                                     <p class="table-cell__text">6</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">xfa@google.com</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">Regina</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Арбитраж</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -256,7 +263,7 @@
                                     <p class="table-cell__text">admin@adclever.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">ZxCVik</p>
                                 </div>
                                 <div class="table-cell">
                                     <p class="table-cell__text">Администратор</p>
@@ -277,13 +284,13 @@
                                     <p class="table-cell__text">8</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">test@adclever.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">xxxMetroxxx</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Редактор новостей</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -325,13 +332,13 @@
                                     <p class="table-cell__text">10</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">vegan@adclever.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">Clash</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Рекламодатель</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -349,13 +356,13 @@
                                     <p class="table-cell__text">11</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">ad@test.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">Flush8</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Аналитик</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -373,13 +380,13 @@
                                     <p class="table-cell__text">12</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">admin@adclever.ru</p>
+                                    <p class="table-cell__text">admin@mail.ru</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Eugene99</p>
+                                    <p class="table-cell__text">Vlipper</p>
                                 </div>
                                 <div class="table-cell">
-                                    <p class="table-cell__text">Администратор</p>
+                                    <p class="table-cell__text">Веб мастер</p>
                                 </div>
                                 <div class="table-cell">
                                     <div class="edits">
@@ -506,15 +513,30 @@
                                 <div class="header__inner">
                                     <div class="filter filter_template">
                                         <p class="filter__text filter__text_template">Фильтр</p>
-                                        <select class="filter-select filter-select_template">
-                                            <option value="" class="filter-select__option">Группа</option>
-                                        </select>
-                                        <select class="filter-select filter-select_template">
-                                            <option value="" class="filter-select__option">Ниша</option>
-                                        </select>
-                                        <select class="filter-select filter-select_template">
-                                            <option value="" class="filter-select__option">Гео</option>
-                                        </select>
+                                        <div class="select select_filter">
+                                            <input class="select__inp" type="hidden" name="">
+                                            <div class="select__head select__head_filter template-form__select">Группа</div>
+                                            <div class="select__list select__list_niche" style="display: none;">
+                                                <div class="select__item select__item_niche">Группа 2</div>
+                                                <div class="select__item select__item_niche">Группа 3</div>
+                                            </div>
+                                        </div>                                       
+                                        <div class="select select_filter">
+                                            <input class="select__inp" type="hidden" name="">
+                                            <div class="select__head select__head_filter template-form__select">Ниша</div>
+                                            <div class="select__list select__list_niche" style="display: none;">
+                                                <div class="select__item select__item_niche">Ниша 2</div>
+                                                <div class="select__item select__item_niche">Ниша 3</div>
+                                            </div>
+                                        </div> 
+                                        <div class="select select_filter">
+                                            <input class="select__inp" type="hidden" name="">
+                                            <div class="select__head select__head_filter template-form__select">Гео</div>
+                                            <div class="select__list select__list_niche" style="display: none;">
+                                                <div class="select__item select__item_niche">Гео 2</div>
+                                                <div class="select__item select__item_niche">Гео 3</div>
+                                            </div>
+                                        </div> 
                                     </div>
                                     <button class="button button_gray">Применить</button>
                                     <div class="search">
@@ -567,7 +589,10 @@
                                         <img src="images/prod-1.png" alt="" class="table-cell__prod">
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">Компьютерная техника</p>
@@ -612,7 +637,10 @@
                                         <img src="images/prod-2.png" alt="" class="table-cell__prod">
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Казахстан (KZ)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">Компьютерная техника</p>
@@ -657,7 +685,10 @@
                                         <img src="images/prod-1.png" alt="" class="table-cell__prod">
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">Компьютерная техника</p>
@@ -702,7 +733,10 @@
                                         <img src="images/prod-2.png" alt="" class="table-cell__prod">
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Казахстан (KZ)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">Компьютерная техника</p>
@@ -747,7 +781,10 @@
                                         <img src="images/prod-1.png" alt="" class="table-cell__prod">
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">Компьютерная техника</p>
@@ -792,7 +829,10 @@
                                         <img src="images/prod-2.png" alt="" class="table-cell__prod">
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Казахстан (KZ)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">Компьютерная техника</p>
@@ -837,7 +877,10 @@
                                         <img src="images/prod-1.png" alt="" class="table-cell__prod">
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">Компьютерная техника</p>
@@ -906,10 +949,15 @@
                                     <div class="template-form__wrapper">
                                         <div class="template-form__inner">
                                             <div class="template-form__field template-form__field_one">
-                                                <label class="template-form__label">Группа</label>
-                                                <div class="template-form__select-wrap">
-                                                    <select class="template-form__select"></select>
-                                                </div>                                            
+                                                <div class="select">
+                                                    <p class="template-form__label">Группа</p>
+                                                    <input class="select__inp" type="hidden" name="">
+                                                    <div class="select__head template-form__select">Группа</div>
+                                                    <div class="select__list select__list_niche" style="display: none;">
+                                                        <div class="select__item select__item_niche">Группа 1</div>
+                                                        <div class="select__item select__item_niche">Группа 2</div>
+                                                    </div>
+                                                </div>                                          
                                             </div>
                                             <div class="template-form__field template-form__field_two">
                                                 <div class="select">
@@ -919,11 +967,7 @@
                                                     <div class="select__list select__list_niche" style="display: none;">
                                                         <div class="select__item select__item_niche">Медицина</div>
                                                         <div class="select__item select__item_niche">Для дома</div>
-                                                        <div class="select__item select__item_niche">Товары для автомобиля</div>
-                                                        <div class="select__field select__field_add">
-                                                            <input type="text" class="select__input" value="" placeholder="Введите сюда название новой ниши которую хотите создать">
-                                                            <span class="select__plus"></span>
-                                                        </div>
+                                                        <div class="select__item select__item_niche">Товары для автомобиля</div>                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -935,13 +979,14 @@
                                             </div>
                                             <div class="template-form__inner template-form__inner_no-mrg">
                                                 <div class="template-form__field template-form__field_four">
-                                                    <label class="template-form__label">Время жизни пуша <span class="template-form__span">(в часах)</span></label>
-                                                    <div class="template-form__select-wrap">
-                                                        <select class="template-form__select">
-                                                            <option value="" class="template-form__option">1</option>
-                                                            <option value="" class="template-form__option">2</option>
-                                                            <option value="" class="template-form__option">3</option>
-                                                        </select>
+                                                    <div class="select">
+                                                        <p class="template-form__label">Время жизни пуша <span class="template-form__span">(в часах)</span></p>
+                                                        <input class="select__inp" type="hidden" name="">
+                                                        <div class="select__head template-form__select">1</div>
+                                                        <div class="select__list select__list_niche" style="display: none;">
+                                                            <div class="select__item select__item_niche">2</div>
+                                                            <div class="select__item select__item_niche">3</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="template-form__field template-form__field_five">
@@ -950,20 +995,24 @@
                                                         <input class="select__inp" type="hidden" name="">
                                                         <div class="select__head template-form__select select__head_geo">
                                                             <img src="images/flag-1.jpg" alt="" class="select__image">
-                                                            <p class="select__text">Россия, RU</p>
+                                                            <p class="select__text">RU</p>
                                                         </div>
                                                         <div class="select__list" style="display: none;">
                                                             <div class="select__item select__item_geo">
+                                                                <img src="images/flag-1.jpg" alt="" class="select__image">
+                                                                <p class="select__text">RU</p>
+                                                            </div>
+                                                            <div class="select__item select__item_geo">
                                                                 <img src="images/flag-3.jpg" alt="" class="select__image">
-                                                                <p class="select__text">Казахстан, KZ</p>
+                                                                <p class="select__text">KZ</p>
                                                             </div>
                                                             <div class="select__item select__item_geo">                                                            
                                                                 <img src="images/flag-4.jpg" alt="" class="select__image">
-                                                                <p class="select__text">Франция, FR</p>
+                                                                <p class="select__text">FR</p>
                                                             </div>
                                                             <div class="select__item select__item_geo">
                                                                 <img src="images/flag-2.jpg" alt="" class="select__image">
-                                                                <p class="select__text">Узбекистан, UZ</p>
+                                                                <p class="select__text">UZ</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -978,10 +1027,6 @@
                                             <div class="template-form__field template-form__field_seven">
                                                 <label class="template-form__label">Текст</label>
                                                 <input type="text" class="template-form__input" placeholder="Текст">
-                                            </div>
-                                            <div class="template-form__field template-form__field_eight">
-                                                <label class="template-form__label">Дата</label>
-                                                <input type="text" class="template-form__input">
                                             </div>
                                         </div>
                                         <div class="template-form__inner">
@@ -1017,15 +1062,30 @@
                                 <div class="header__inner">
                                     <div class="filter filter_template">
                                         <p class="filter__text filter__text_template">Фильтр</p>
-                                        <select class="filter-select filter-select_template">
-                                            <option value="" class="filter-select__option">Шаблонов</option>
-                                        </select>
-                                        <select class="filter-select filter-select_template">
-                                            <option value="" class="filter-select__option">Включен</option>
-                                        </select>
-                                        <select class="filter-select filter-select_template">
-                                            <option value="" class="filter-select__option">Вкл (завтра)</option>
-                                        </select>
+                                        <div class="select select_filter">
+                                            <input class="select__inp" type="hidden" name="">
+                                            <div class="select__head select__head_filter template-form__select">Шаблонов</div>
+                                            <div class="select__list select__list_niche" style="display: none;">
+                                                <div class="select__item select__item_niche">Шаблонов 2</div>
+                                                <div class="select__item select__item_niche">Шаблонов 3</div>
+                                            </div>
+                                        </div> 
+                                        <div class="select select_filter">
+                                            <input class="select__inp" type="hidden" name="">
+                                            <div class="select__head select__head_filter template-form__select">Включен</div>
+                                            <div class="select__list select__list_niche" style="display: none;">
+                                                <div class="select__item select__item_niche">Да</div>
+                                                <div class="select__item select__item_niche">Нет</div>
+                                            </div>
+                                        </div> 
+                                        <div class="select select_filter">
+                                            <input class="select__inp" type="hidden" name="">
+                                            <div class="select__head select__head_filter template-form__select">Вкл (завтра)</div>
+                                            <div class="select__list select__list_niche" style="display: none;">
+                                                <div class="select__item select__item_niche">Да</div>
+                                                <div class="select__item select__item_niche">Нет</div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <button class="button button_gray">Применить</button>
                                     <div class="search">
@@ -1077,7 +1137,10 @@
                                         <p class="table-cell__text">1</p>
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">21/06-22/06 CH</p>
@@ -1122,7 +1185,10 @@
                                         <p class="table-cell__text">1</p>
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">21/06-22/06 CH</p>
@@ -1167,7 +1233,10 @@
                                         <p class="table-cell__text">1</p>
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">21/06-22/06 CH</p>
@@ -1212,7 +1281,10 @@
                                         <p class="table-cell__text">1</p>
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">21/06-22/06 CH</p>
@@ -1257,7 +1329,10 @@
                                         <p class="table-cell__text">1</p>
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">21/06-22/06 CH</p>
@@ -1302,7 +1377,10 @@
                                         <p class="table-cell__text">1</p>
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">21/06-22/06 CH</p>
@@ -1347,7 +1425,10 @@
                                         <p class="table-cell__text">1</p>
                                     </div>
                                     <div class="table-cell table-cell_template">
-                                        <p class="table-cell__text">Россия (RU)</p>
+                                        <div class="table-cell__flag">
+                                            <img src="images/flag-3.jpg" class="table-cell__pic" alt="">
+                                            <span class="table-cell__text">kz</span>    
+                                        </div>
                                     </div>
                                     <div class="table-cell table-cell_template">
                                         <p class="table-cell__text">21/06-22/06 CH</p>
@@ -1445,20 +1526,24 @@
                                                     <input class="select__inp" type="hidden" name="">
                                                     <div class="select__head template-form__select select__head_geo">
                                                         <img src="images/flag-1.jpg" alt="" class="select__image">
-                                                        <p class="select__text">Россия, RU</p>
+                                                        <p class="select__text">RU</p>
                                                     </div>
                                                     <div class="select__list" style="display: none;">
                                                         <div class="select__item select__item_geo">
+                                                            <img src="images/flag-1.jpg" alt="" class="select__image">
+                                                            <p class="select__text">RU</p>
+                                                        </div>
+                                                        <div class="select__item select__item_geo">
                                                             <img src="images/flag-3.jpg" alt="" class="select__image">
-                                                            <p class="select__text">Казахстан, KZ</p>
+                                                            <p class="select__text">KZ</p>
                                                         </div>
                                                         <div class="select__item select__item_geo">                                                            
                                                             <img src="images/flag-4.jpg" alt="" class="select__image">
-                                                            <p class="select__text">Франция, FR</p>
+                                                            <p class="select__text">FR</p>
                                                         </div>
                                                         <div class="select__item select__item_geo">
                                                             <img src="images/flag-2.jpg" alt="" class="select__image">
-                                                            <p class="select__text">Узбекистан, UZ</p>
+                                                            <p class="select__text">UZ</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1472,10 +1557,6 @@
                                                         <div class="select__item select__item_niche">Медицина</div>
                                                         <div class="select__item select__item_niche">Для дома</div>
                                                         <div class="select__item select__item_niche">Товары для автомобиля</div>
-                                                        <div class="select__field select__field_add">
-                                                            <input type="text" class="select__input" placeholder="Введите сюда название новой ниши которую хотите создать">
-                                                            <span class="select__plus"></span>
-                                                        </div>
                                                     </div>
                                                 </div>                                           
                                             </div>
@@ -1492,7 +1573,7 @@
                                             </div>
                                             <div class="template-form__field template-form__field_thirteen">
                                                 <label class="template-form__label">Выбрано шаблонов</label>
-                                                <input type="text" class="template-form__input template-form__input_template" placeholder="24">                                           
+                                                <div class="template-form__input template-form__input_template">24</div>                                         
                                             </div>
                                         </div>
                                         <div class="template-form__buttons">
@@ -1703,7 +1784,7 @@
                         <div class="statistics__wrapper">
                             <div class="header header_stat">
                                 <div class="header__inner">
-                                    <div class="header__wrapper">
+                                    <div class="header__wrapper header__wrapper_wrap">
                                         <div class="header__date">
                                             <input type="text" class="field field_date rangeDate" placeholder="21.06.2019 - 21.06.2021">
                                         </div>
@@ -1724,8 +1805,8 @@
                                             <input type="text" class="field field_little" placeholder="Страна">
                                             <input type="text" class="field field_little" placeholder="Регион">
                                             <input type="text" class="field field_little" placeholder="param3">
-                                        </div>
-                                        <button class="button button_green button_plus"></button>
+                                            <button class="button button_green button_plus"></button>
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -1813,9 +1894,9 @@
                                     <select class="filter-select filter-select_template">
                                         <option value="" class="filter-select__option">Браузер</option>
                                     </select>
-                                    <input type="text" class="field field_token" placeholder="Токен"> 
-                                </div>
-                                <button class="button button_gray">Применить</button>
+                                    <input type="text" class="field field_token" placeholder="Токен">
+                                    <button class="button button_gray">Применить</button> 
+                                </div>                                
                             </div>
                         </div>
                         <div class="table">
