@@ -1033,7 +1033,7 @@ input:focus:-ms-input-placeholder {
 /* Add new template style eng */
 /* Niche style start */
 .niche {
-    /* display: none; */
+    display: none;
     background-color: #ffffff;
     margin-top: 30px;
 }

@@ -202,5 +202,28 @@ jQuery(($) => {
             $(".select__list").fadeOut();
         }
     });
+
+    $(".select").on("click", ".select__item_dropdown", function () {
+        $(".niche").addClass("show");
+    });        
+});
+
+// Show niche block and change count of templates
+
+const checkboxes = document.querySelectorAll('.checkbox__input_niche');
+let countField = document.querySelector('.template-form__input_count');
+let checkCount = 0;
+
+checkboxes.forEach((el) => {
+    el.addEventListener('change', function () {
+        var check = event.target;
         
+        if (check.checked === true) {
+            checkCount += 1;           
+        }
+        if (check.checked !== true) {
+            checkCount -= 1;                       
+        }
+        countField.value = checkCount; 
+    });
 });
