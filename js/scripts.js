@@ -19,6 +19,15 @@ $(document).on("click", ".menu-nav__item", function() {
 	}
 });
 
+// Mobile menu
+
+$('.burger').on('click', function() {
+    $('.sidebar-menu__inner').toggleClass('open');
+    $('.burger__line_last').toggleClass('burger__line_mob');
+});
+$('.menu-nav__item').on('click', function() {
+    $('.sidebar-menu__inner').toggleClass('open');
+});
 // Show/hide menu 
 
 $('.menu-collapse').on('click', function() {
