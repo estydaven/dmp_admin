@@ -4,6 +4,8 @@ $(document).on("click", ".menu-nav__item", function() {
 	let numberIndex = $(this).index();
     $(".templates-new").removeClass("active");
     $(".templates__wrapper").removeClass("hidden");
+    $(".users__inner").removeClass("hide");
+    $(".administrate").removeClass("show");
 
 	if (!$(this).is("active")) {
 		$(".menu-nav__item").removeClass("active");
@@ -27,6 +29,7 @@ $('.burger').on('click', function() {
 });
 $('.menu-nav__item').on('click', function() {
     $('.sidebar-menu__inner').toggleClass('open');
+    $('.burger__line_last').removeClass('burger__line_mob');
 });
 // Show/hide menu 
 
@@ -59,11 +62,11 @@ $('.menu-collapsed').on('click', function() {
 // Show/hide new template block
 
 $('.header-template__button').on('click', function() {
-    if($(this).hasClass('header-template__button_template')) {
+    if($(this).hasClass('header-template__button-template')) {
         $('.templates-new_template').addClass('active');
         $('.templates__wrapper_template').addClass('hidden');
     }
-    if($(this).hasClass('header-template__button_company')) {
+    if($(this).hasClass('header-template__button-company')) {
         $('.templates-new_company').addClass('active');
         $('.templates__wrapper_company').addClass('hidden');
     }
@@ -86,6 +89,7 @@ $('.button_save').on('click', function() {
     if($(this).hasClass('button_company')) {
         $('.templates-new_company').removeClass('active');
         $('.templates__wrapper_company').removeClass('hidden');
+        $('.niche').removeClass('show');
     }
 });
 $('.button-reset').on('click', function() {
@@ -161,12 +165,26 @@ const dropBtn = document.querySelectorAll('.edits_token');
 
 dropBtn.forEach((el) => {
     el.onclick = function() {
-        let dropdown = el.parentNode.getElementsByClassName('token-info')[0];
-        dropdown.classList.toggle('show'); 
-        let button = el.getElementsByClassName('edits__item_info')[0];
+        let dropdown = this.parentNode.getElementsByClassName('token-info')[0];
+        dropdown.classList.toggle('show');
+        let button = this.getElementsByClassName('edits__item_info')[0];
         button.classList.toggle('edits__item_close');
     }
 });
+
+if (window.innerWidth < 769) {
+    dropBtn.forEach((el) => {
+        el.onclick = function() {
+            let dropdown = this.parentNode.getElementsByClassName('token-info')[0];
+            dropdown.classList.toggle('show');
+            let button = this.getElementsByClassName('edits__item_info')[0];
+            button.classList.toggle('edits__item_close');
+            let pagination = document.querySelector('.pagination_token');
+            let height = dropdown.offsetHeight;
+            pagination.style.top = `${height}px`;
+        }
+    });
+}
 
 // Add row to archieve
 $(".edits__item_delete").on("click", function () {
@@ -175,7 +193,7 @@ $(".edits__item_delete").on("click", function () {
 
 // Show arrows in table-cell
 $(".table-cell_arrows").on("click", function () {
-    $(this).children('.arrows').css('display', 'block');
+    $(this).children('.arrows').toggleClass('show-flex');
 });
 
 // Custom geo select
@@ -234,5 +252,37 @@ checkboxes.forEach((el) => {
             checkCount -= 1;                       
         }
         countField.value = checkCount; 
+    });
+});
+
+// Reducing text length in mobile block 'Niche'
+if (($(window).width() < 769)) {
+    let sizeWords = 12,
+    wordsContent= $('.mob-text'),
+    newText = wordsContent.text();
+    
+    if(newText.length > sizeWords){
+        wordsContent.text(newText.slice(0, sizeWords) + ' ...');
+    }
+
+    let sizeWordsDescr = 18,
+    wordsContentDescr= $('.mob-descr'),
+    newTextDescr = wordsContentDescr.text();
+    
+    if(newTextDescr.length > sizeWordsDescr){
+        wordsContentDescr.text(newTextDescr.slice(0, sizeWordsDescr) + ' ...');
+    }
+}
+
+// Show/hide administrate block
+ 
+const adminButtons = document.querySelectorAll('.edits__item_admin');
+const adminBlock = document.querySelector('.administrate');
+const usersBlock = document.querySelector('.users__inner');
+
+adminButtons.forEach((el) => {
+    el.addEventListener('click', function () {
+        adminBlock.classList.add('show');
+        usersBlock.classList.add('hide');
     });
 });
