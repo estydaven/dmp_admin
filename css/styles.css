@@ -482,7 +482,7 @@ input:focus:-ms-input-placeholder {
     padding: 0 14px 0 18px;
 }
 .table__row_company {
-    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 87px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr 50px;
     padding: 0 14px 0 18px;
 }
 .table__row_niche {
@@ -520,7 +520,12 @@ input:focus:-ms-input-placeholder {
     padding: 12px 18px;
 }
 .table-cell_template {
+    display: flex;
+    align-items: center;
     padding: 12px 3px;
+}
+.table-cell_edits {
+    justify-content: space-between;
 }
 .table-cell_token {
     padding: 3px 3px;
@@ -626,6 +631,7 @@ input:focus:-ms-input-placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 .edits__item {
     width: 16px;
