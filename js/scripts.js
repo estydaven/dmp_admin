@@ -286,3 +286,41 @@ adminButtons.forEach((el) => {
         usersBlock.classList.add('hide');
     });
 });
+
+// Popups
+
+// Popup filter
+const body = document.body;
+const filterButton = document.querySelector('.button_plus');
+const filterPopup = document.querySelector('.popup_filters');
+const closeButtonfilter = document.querySelector('.popup__close_filters');
+
+function showfilterPopup() {
+    filterPopup.style.display = 'flex';
+    body.style.overflow = 'hidden';
+}
+function closefilterPopup() {
+    filterPopup.style.display = 'none';
+    body.style.overflow = 'auto';
+}
+
+filterButton.addEventListener('click', showfilterPopup);
+closeButtonfilter.addEventListener('click', closefilterPopup);
+
+// Popup cols
+const colsButton = document.querySelector('.cols-button');
+const colsPopup = document.querySelector('.popup_cols');
+const closeButtoncols = document.querySelector('.popup__close_cols');
+const popupcols = document.querySelector('.popup__cols');
+
+function showColsPopup() {
+    colsPopup.style.display = 'flex';
+    body.style.overflow = 'hidden';
+}
+function closeColsPopup() {
+    colsPopup.style.display = 'none';
+    body.style.overflow = 'auto';
+}
+
+colsButton.addEventListener('click', showColsPopup);
+closeButtoncols.addEventListener('click', closeColsPopup);

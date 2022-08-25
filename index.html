@@ -1046,8 +1046,8 @@
                                             </div>
                                             <div class="template-form__file">
                                                 <div class="upload-file">
-                                                    <input type="file" name="file-7[]" id="file-7" class="inputfile upload-file__input" data-multiple-caption="{count} files selected" multiple="">                                                
-                                                    <label for="file-7" class="upload-file__label">
+                                                    <input type="file" name="file[]" id="file" class="inputfile upload-file__input" data-multiple-caption="{count} files selected" multiple="">                                                
+                                                    <label for="file" class="upload-file__label">
                                                         <span class="upload-name button">Выбрать файл</span>
                                                         <span class="upload-text">Файл не выбран</span>                                         
                                                     </label>          
@@ -1159,8 +1159,8 @@
                                             </div>
                                             <div class="template-form__file">
                                                 <div class="upload-file">
-                                                    <input type="file" name="file-7[]" id="file-7" class="inputfile upload-file__input" data-multiple-caption="{count} files selected" multiple="">                                                
-                                                    <label for="file-7" class="upload-file__label">
+                                                    <input type="file" name="file-2[]" id="file-2" class="inputfile upload-file__input" data-multiple-caption="{count} files selected" multiple="">                                                
+                                                    <label for="file-2" class="upload-file__label">
                                                         <span class="upload-name button">Выбрать файл</span>
                                                         <span class="upload-text">Файл не выбран</span>                                         
                                                     </label>          
@@ -2051,6 +2051,7 @@
                                             <p class="table-cell__text table-cell__text_bold table-cell__text_stat">185 000 $</p>
                                         </div>
                                     </div>
+                                    <button type="button" class="cols-button"></button>
                                 </div>
                             </div>
                         </div>
@@ -2456,6 +2457,341 @@
                         </div>                     
                     </section>
                 </div>      
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_filters">
+        <div class="popup__overlay"></div>
+        <div class="popup__inner popup__inner_filter">
+            <div class="popup__close popup__close_filters"></div>
+            <h2 class="popup__title">Фильтры</h2>
+            <p class="popup__subtitle">Выберите нужные поля</p>
+            <div class="popup__wrapper">
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-14">
+                        <label for="checkbox-14" class="checkbox-filter__label">ID</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-15">
+                        <label for="checkbox-15" class="checkbox-filter__label">Часы</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-16">
+                        <label for="checkbox-16" class="checkbox-filter__label">Новости</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-17">
+                        <label for="checkbox-17" class="checkbox-filter__label">Внешние тизеры</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-18">
+                        <label for="checkbox-18" class="checkbox-filter__label">Источник</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-19">
+                        <label for="checkbox-19" class="checkbox-filter__label">Компания</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-20">
+                        <label for="checkbox-20" class="checkbox-filter__label">Товарные тизеры</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-21">
+                        <label for="checkbox-21" class="checkbox-filter__label">Аукцион</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-22">
+                        <label for="checkbox-22" class="checkbox-filter__label">Устройство</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-23">
+                        <label for="checkbox-23" class="checkbox-filter__label">Домен</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-24">
+                        <label for="checkbox-24" class="checkbox-filter__label">Страна</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-25">
+                        <label for="checkbox-25" class="checkbox-filter__label">Глубина</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-26">
+                        <label for="checkbox-26" class="checkbox-filter__label">Категория новости</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-27">
+                        <label for="checkbox-27" class="checkbox-filter__label">Тип новости</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-28">
+                        <label for="checkbox-28" class="checkbox-filter__label">АБ тест</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-29">
+                        <label for="checkbox-29" class="checkbox-filter__label">Площадка</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-30">
+                        <label for="checkbox-30" class="checkbox-filter__label">Позиция тизера в выдаче</label>
+                    </div>
+                </div>
+                <div class="popup__checkbox">
+                    <div class="checkbox-filter">
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-31">
+                        <label for="checkbox-31" class="checkbox-filter__label">data</label>
+                    </div>
+                </div>
+            </div>
+            <div class="template-form__buttons">
+                <button class="button button_green button_popup button_left" type="button">Сохранить</button>
+                <button class="button button_gray button_popup" type="reset">Отменить</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_cols">
+        <div class="popup__overlay"></div>
+        <div class="popup__inner popup__inner_cols">
+            <div class="popup__close popup__close_cols"></div>
+            <h2 class="popup__title popup__title_cols">Настройка колонок таблицы</h2>
+            <p class="popup__subtitle popup__subtitle_cols">Трафик</p>
+            <div class="popup__wrapper popup__wrapper_no-line popup__wrapper_cols">                
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-33">
+                        <label for="checkbox-33" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Дата</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-34">
+                        <label for="checkbox-34" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Ср. Время</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-35">
+                        <label for="checkbox-35" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Показы</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-36">
+                        <label for="checkbox-36" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">% отказов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-37">
+                        <label for="checkbox-37" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Клики</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-38">
+                        <label for="checkbox-38" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">CR</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-39">
+                        <label for="checkbox-39" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">CRC</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-40">
+                        <label for="checkbox-40" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">CRn</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-41">
+                        <label for="checkbox-41" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">EPC</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-42">
+                        <label for="checkbox-42" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Ратио</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-43">
+                        <label for="checkbox-43" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">% пробива</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-44">
+                        <label for="checkbox-44" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Ратио новости</span>
+                    </div>
+                </div>
+            </div>
+            <p class="popup__subtitle popup__subtitle_cols">Лид</p>
+            <div class="popup__wrapper popup__wrapper_cols">                
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-45">
+                        <label for="checkbox-45" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">CPL</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-46">
+                        <label for="checkbox-46" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Кол-во апрувов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-47">
+                        <label for="checkbox-47" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">EPL</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-48">
+                        <label for="checkbox-48" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Кол-во невалидов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-49">
+                        <label for="checkbox-49" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Кол-во лидов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-50">
+                        <label for="checkbox-50" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">% отмен</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-51">
+                        <label for="checkbox-51" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">% апрува</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-52">
+                        <label for="checkbox-52" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">% апрувов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-53">
+                        <label for="checkbox-53" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Заработано</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-54">
+                        <label for="checkbox-54" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">% в ожидании</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-55">
+                        <label for="checkbox-55" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Кол-во всего лидов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-56">
+                        <label for="checkbox-56" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">% невалидов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-57">
+                        <label for="checkbox-57" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Кол-во отмен</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-58">
+                        <label for="checkbox-58" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Сумма в ожидании</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-59">
+                        <label for="checkbox-59" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Кол-во в ожидании</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-60">
+                        <label for="checkbox-60" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Сумма отмен</span>
+                    </div>
+                </div>
+            </div>
+            <div class="template-form__buttons">
+                <button class="button button_green button_popup button_left" type="button">Сохранить</button>
+                <button class="button button_gray button_popup" type="reset">Отменить</button>
             </div>
         </div>
     </div>
