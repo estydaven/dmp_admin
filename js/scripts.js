@@ -243,7 +243,7 @@ let checkCount = 0;
 
 checkboxes.forEach((el) => {
     el.addEventListener('change', function () {
-        var check = event.target;
+        let check = event.target;
 
         if (check.checked === true) {
             checkCount += 1;
@@ -327,12 +327,13 @@ closeButtoncols.addEventListener('click', closeColsPopup);
 
 // Add field from popup to table
 
-const filterFields = document.querySelectorAll('.checkbox-filter__input');
-const saveButtonFilter = document.querySelector('.button_filter');
+const addingFields = document.querySelectorAll('.checkbox-filter__input');
 const filterWrapper = document.querySelector('.filters');
+const saveButtonFilter = document.querySelector('.button_filter-add');
+const removeButtonFilter = document.querySelector('.button_filter-remove');
 
 function addFilters() {
-    filterFields.forEach((el) => {
+    addingFields.forEach((el) => {
         const fieldValue = el.value;
         const newField = document.createElement('input');
         newField.className = "field field_little field_new";
@@ -341,13 +342,35 @@ function addFilters() {
         if (el.checked) {                       
             filterButton.before(newField);
         }
-        if (!el.checked) {
-            if (newField.classList.contains('field_new')) {
-                newField.remove();
-                console.log(newField.checked);
-            }            
-        }
     });
+
+    closefilterPopup();
 }
 
+function removeFilters() {
+    addingFields.forEach((el) => {
+        el.checked = false;
+    });
+    
+    closefilterPopup();
+}
+
+addingFields.forEach((elem) => {
+    elem.addEventListener('click', function (event) {
+        let check = event.target;
+        let elemValue = elem.value;
+        if (check.checked !== true) {
+            const filterFields = document.querySelectorAll('.field_new');
+            filterFields.forEach((el) => {
+                const deleteField = el;
+
+                if(elemValue === deleteField.placeholder) {
+                    deleteField.remove();
+                }                
+            });
+        }        
+    });
+});
+
 saveButtonFilter.addEventListener('click', addFilters);
+removeButtonFilter.addEventListener('click', removeFilters);
