@@ -325,7 +325,7 @@ function closeColsPopup() {
 colsButton.addEventListener('click', showColsPopup);
 closeButtoncols.addEventListener('click', closeColsPopup);
 
-// Add field from popup to table
+// Add field from popup to table head
 
 const addingFields = document.querySelectorAll('.checkbox-filter__input');
 const filterWrapper = document.querySelector('.filters');
@@ -348,18 +348,11 @@ function addFilters() {
 }
 
 function removeFilters() {
-    addingFields.forEach((el) => {
-        el.checked = false;
-    });
-    
-    closefilterPopup();
-}
 
-addingFields.forEach((elem) => {
-    elem.addEventListener('click', function (event) {
-        let check = event.target;
+    addingFields.forEach((elem) => {
+        elem.checked = false;
         let elemValue = elem.value;
-        if (check.checked !== true) {
+        if (elem.checked !== true) {
             const filterFields = document.querySelectorAll('.field_new');
             filterFields.forEach((el) => {
                 const deleteField = el;
@@ -368,9 +361,11 @@ addingFields.forEach((elem) => {
                     deleteField.remove();
                 }                
             });
-        }        
+        }
     });
-});
+    
+    closefilterPopup();
+}
 
 saveButtonFilter.addEventListener('click', addFilters);
 removeButtonFilter.addEventListener('click', removeFilters);
