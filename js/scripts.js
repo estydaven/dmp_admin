@@ -287,7 +287,7 @@ adminButtons.forEach((el) => {
     });
 });
 
-// Popups
+// POPUPS
 
 // Popup filter
 const body = document.body;
@@ -324,3 +324,30 @@ function closeColsPopup() {
 
 colsButton.addEventListener('click', showColsPopup);
 closeButtoncols.addEventListener('click', closeColsPopup);
+
+// Add field from popup to table
+
+const filterFields = document.querySelectorAll('.checkbox-filter__input');
+const saveButtonFilter = document.querySelector('.button_filter');
+const filterWrapper = document.querySelector('.filters');
+
+function addFilters() {
+    filterFields.forEach((el) => {
+        const fieldValue = el.value;
+        const newField = document.createElement('input');
+        newField.className = "field field_little field_new";
+        newField.placeholder = fieldValue; 
+
+        if (el.checked) {                       
+            filterButton.before(newField);
+        }
+        if (!el.checked) {
+            if (newField.classList.contains('field_new')) {
+                newField.remove();
+                console.log(newField.checked);
+            }            
+        }
+    });
+}
+
+saveButtonFilter.addEventListener('click', addFilters);

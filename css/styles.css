@@ -129,7 +129,7 @@ body {
     text-transform: uppercase;
     font-weight: 12px;
 }
-.button_left {
+.button_modal {
     margin-right: 15px;
 }
 .field {
@@ -396,6 +396,11 @@ input:focus:-ms-input-placeholder {
     margin: 0 12px 0 45px;
     display: flex;
     align-items: center;
+}
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 .filter_template {
     margin: 0;
