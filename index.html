@@ -90,8 +90,8 @@
                                         <div class="table-cell table-cell_arrows">
                                             <span class="table-cell__head">id</span>
                                             <div class="arrows">
-                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon arrows__icon_direct" onclick="sort()">
-                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon arrows__icon_reverse" onclick="sort(1)">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon arrows__icon_direct">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon arrows__icon_reverse">
                                             </div>
                                         </div>
                                         <div class="table-cell table-cell_arrows">
@@ -1949,7 +1949,7 @@
                                 </div>
                             </div>
                             <div class="table table_stat">
-                                <div class="table__wrapper">
+                                <div class="table__wrapper table__wrapper_stat">
                                     <div class="table__row table__row_stat table__head">
                                         <div class="table-cell table-cell_template table-cell_arrows table-cell_stat">
                                             <span class="table-cell__head">Дата</span>
@@ -1989,85 +1989,383 @@
                                                 <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
                                             </div>
                                         </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Ср. Время">
+                                            <span class="table-cell__head">Ср. Время</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Показы">
+                                            <span class="table-cell__head">Показы</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="% отказов">
+                                            <span class="table-cell__head">% отказов</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Клики">
+                                            <span class="table-cell__head">Клики</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="CR">
+                                            <span class="table-cell__head">CR</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="CRC">
+                                            <span class="table-cell__head">CRC</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="CRn">
+                                            <span class="table-cell__head">CRn</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="EPC">
+                                            <span class="table-cell__head">EPC</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Ратио">
+                                            <span class="table-cell__head">Ратио</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="% пробива">
+                                            <span class="table-cell__head">% пробива</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Ратио новости">
+                                            <span class="table-cell__head">Ратио новости</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="CPL">
+                                            <span class="table-cell__head">CPL</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Кол-во апрувов">
+                                            <span class="table-cell__head">Кол-во апрувов</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="EPL">
+                                            <span class="table-cell__head">EPL</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Кол-во невалидов">
+                                            <span class="table-cell__head">Кол-во невалидов</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="% отмен">
+                                            <span class="table-cell__head">% отмен</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="% апрува">
+                                            <span class="table-cell__head">% апрува</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="% апрувов">
+                                            <span class="table-cell__head">% апрувов</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Заработано">
+                                            <span class="table-cell__head">Заработано</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="% в ожидании">
+                                            <span class="table-cell__head">% в ожидании</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Кол-во всего лидов">
+                                            <span class="table-cell__head">Кол-во всего лидов</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="% невалидов">
+                                            <span class="table-cell__head">% невалидов</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Кол-во отмен">
+                                            <span class="table-cell__head">Кол-во отмен</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Сумма в ожидании">
+                                            <span class="table-cell__head">Сумма в ожидании</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Кол-во в ожидании">
+                                            <span class="table-cell__head">Кол-во в ожидании</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_arrows table-cell_stat hide" data-name="Сумма отмен">
+                                            <span class="table-cell__head">Сумма отмен</span>
+                                            <div class="arrows">
+                                                <img src="images/icons/arr-up.svg" alt="" class="arrows__icon">
+                                                <img src="images/icons/arr-down.svg" alt="" class="arrows__icon">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="table__row table__row_stat">
                                         <div class="table-cell table-cell_template table-cell_stat">
                                             <p class="table-cell__text table-cell__text_date">12.06.22</p>
                                         </div>
                                         <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">31 441 <span class="stat-up">+12%</span></p>
+                                            <p class="table-cell__text table-cell__text_bold">31 441 <span class="stat-up">+12%</span></p>
                                         </div>
                                         <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">2400 <span class="stat-up">+12%</span></p>
+                                            <p class="table-cell__text table-cell__text_bold">2400 <span class="stat-up">+12%</span></p>
                                         </div>
                                         <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">130 <span class="stat-down">-12%</span></p>
+                                            <p class="table-cell__text table-cell__text_bold">130 <span class="stat-down">-12%</span></p>
                                         </div>
                                         <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">12 <span class="stat-up">+12%</span></p>
+                                            <p class="table-cell__text table-cell__text_bold">12 <span class="stat-up">+12%</span></p>
                                         </div>
                                         <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">185 000 $</p>
+                                            <p class="table-cell__text table-cell__text_bold">185 000 $</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Ср. Время">
+                                            <p class="table-cell__text table-cell__text_bold">15</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Показы">
+                                            <p class="table-cell__text table-cell__text_bold">5</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="% отказов">
+                                            <p class="table-cell__text table-cell__text_bold">20</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Клики">
+                                            <p class="table-cell__text table-cell__text_bold">134</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="CR">
+                                            <p class="table-cell__text table-cell__text_bold">3</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="CRC">
+                                            <p class="table-cell__text table-cell__text_bold">13</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="CRn">
+                                            <p class="table-cell__text table-cell__text_bold">7</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="EPC">
+                                            <p class="table-cell__text table-cell__text_bold">2</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Ратио">
+                                            <p class="table-cell__text table-cell__text_bold">34</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="% пробива">
+                                            <p class="table-cell__text table-cell__text_bold">7</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Ратио новости">
+                                            <p class="table-cell__text table-cell__text_bold">15</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="CPL">
+                                            <p class="table-cell__text table-cell__text_bold">23</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Кол-во апрувов">
+                                            <p class="table-cell__text table-cell__text_bold">16</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="EPL">
+                                            <p class="table-cell__text table-cell__text_bold">1</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Кол-во невалидов">
+                                            <p class="table-cell__text table-cell__text_bold">4</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="% отмен">
+                                            <p class="table-cell__text table-cell__text_bold">4</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="% апрува">
+                                            <p class="table-cell__text table-cell__text_bold">9</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="% апрувов">
+                                            <p class="table-cell__text table-cell__text_bold">9</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Заработано">
+                                            <p class="table-cell__text table-cell__text_bold">185 000 $</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="% в ожидании">
+                                            <p class="table-cell__text table-cell__text_bold">3</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Кол-во всего лидов">
+                                            <p class="table-cell__text table-cell__text_bold">45</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="% невалидов">
+                                            <p class="table-cell__text table-cell__text_bold">12</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Кол-во отмен">
+                                            <p class="table-cell__text table-cell__text_bold">19</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Сумма в ожидании">
+                                            <p class="table-cell__text table-cell__text_bold">140 000 $</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Кол-во в ожидании">
+                                            <p class="table-cell__text table-cell__text_bold">30</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat hide" data-name="Сумма отмен">
+                                            <p class="table-cell__text table-cell__text_bold">90 000 $</p>
                                         </div>
                                     </div>
-                                    <div class="table__row table__row_stat">
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_date">12.06.22</p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">31 441 <span class="stat-up">+12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">2400 <span class="stat-up">+12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">130 <span class="stat-down">-12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">12 <span class="stat-up">+12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">185 000 $</p>
-                                        </div>
-                                    </div>
-                                    <div class="table__row table__row_stat">
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_date">12.06.22</p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">31 441 <span class="stat-up">+12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">2400 <span class="stat-up">+12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">130 <span class="stat-down">-12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">12 <span class="stat-up">+12%</span></p>
-                                        </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">185 000 $</p>
-                                        </div>
-                                    </div>
-                                    <div class="table__row table__row_stat table__row_total">
-                                        <div class="table-cell table-cell_template table-cell_stat">
+                                    <div class="table__row table__row_stat total">
+                                        <div class="table-cell table-cell_template table-cell_stat total">
                                             <p class="table-cell__text">Итого</p>
                                         </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">31 441 <span class="stat-up">+12%</span></p>
+                                        <div class="table-cell table-cell_template table-cell_stat total">
+                                            <p class="table-cell__text table-cell__text_bold">31 441 <span class="stat-up">+12%</span></p>
                                         </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">2400 <span class="stat-up">+12%</span></p>
+                                        <div class="table-cell table-cell_template table-cell_stat total">
+                                            <p class="table-cell__text table-cell__text_bold">2400 <span class="stat-up">+12%</span></p>
                                         </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">130 <span class="stat-down">-12%</span></p>
+                                        <div class="table-cell table-cell_template table-cell_stat total">
+                                            <p class="table-cell__text table-cell__text_bold">130 <span class="stat-down">-12%</span></p>
                                         </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">12 <span class="stat-up">+12%</span></p>
+                                        <div class="table-cell table-cell_template table-cell_stat total">
+                                            <p class="table-cell__text table-cell__text_bold">12 <span class="stat-up">+12%</span></p>
                                         </div>
-                                        <div class="table-cell table-cell_template table-cell_stat">
-                                            <p class="table-cell__text table-cell__text_bold table-cell__text_stat">185 000 $</p>
+                                        <div class="table-cell table-cell_template table-cell_stat total">
+                                            <p class="table-cell__text table-cell__text_bold">185 000 $</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Ср. Время">
+                                            <p class="table-cell__text table-cell__text_bold">15</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Показы">
+                                            <p class="table-cell__text table-cell__text_bold">5</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="% отказов">
+                                            <p class="table-cell__text table-cell__text_bold">20</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Клики">
+                                            <p class="table-cell__text table-cell__text_bold">134</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="CR">
+                                            <p class="table-cell__text table-cell__text_bold">3</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="CRC">
+                                            <p class="table-cell__text table-cell__text_bold">13</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="CRn">
+                                            <p class="table-cell__text table-cell__text_bold">7</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="EPC">
+                                            <p class="table-cell__text table-cell__text_bold">2</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Ратио">
+                                            <p class="table-cell__text table-cell__text_bold">34</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="% пробива">
+                                            <p class="table-cell__text table-cell__text_bold">7</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Ратио новости">
+                                            <p class="table-cell__text table-cell__text_bold">15</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="CPL">
+                                            <p class="table-cell__text table-cell__text_bold">23</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Кол-во апрувов">
+                                            <p class="table-cell__text table-cell__text_bold">16</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="EPL">
+                                            <p class="table-cell__text table-cell__text_bold">1</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Кол-во невалидов">
+                                            <p class="table-cell__text table-cell__text_bold">4</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="% отмен">
+                                            <p class="table-cell__text table-cell__text_bold">4</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="% апрува">
+                                            <p class="table-cell__text table-cell__text_bold">9</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="% апрувов">
+                                            <p class="table-cell__text table-cell__text_bold">9</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Заработано">
+                                            <p class="table-cell__text table-cell__text_bold">185 000 $</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="% в ожидании">
+                                            <p class="table-cell__text table-cell__text_bold">3</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Кол-во всего лидов">
+                                            <p class="table-cell__text table-cell__text_bold">45</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="% невалидов">
+                                            <p class="table-cell__text table-cell__text_bold">12</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Кол-во отмен">
+                                            <p class="table-cell__text table-cell__text_bold">19</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Сумма в ожидании">
+                                            <p class="table-cell__text table-cell__text_bold">140 000 $</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Кол-во в ожидании">
+                                            <p class="table-cell__text table-cell__text_bold">30</p>
+                                        </div>
+                                        <div class="table-cell table-cell_template table-cell_stat total hide" data-name="Сумма отмен">
+                                            <p class="table-cell__text table-cell__text_bold">90 000 $</p>
                                         </div>
                                     </div>
                                     <button type="button" class="cols-button"></button>
@@ -2488,31 +2786,31 @@
             <div class="popup__wrapper">
                 <div class="popup__checkbox">
                     <div class="checkbox-filter">
-                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-61" value="Устройство" checked>
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-61" value="Устройство" checked disabled>
                         <label for="checkbox-61" class="checkbox-filter__label">Устройство</label>
                     </div>
                 </div>
                 <div class="popup__checkbox">
                     <div class="checkbox-filter">
-                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-62" value="Регион" checked>
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-62" value="Регион" checked disabled>
                         <label for="checkbox-62" class="checkbox-filter__label">Регион</label>
                     </div>
                 </div>
                 <div class="popup__checkbox">
                     <div class="checkbox-filter">
-                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-63" value="Браузер" checked>
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-63" value="Браузер" checked disabled>
                         <label for="checkbox-63" class="checkbox-filter__label">Браузер</label>
                     </div>
                 </div>
                 <div class="popup__checkbox">
                     <div class="checkbox-filter">
-                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-64" value="ОС" checked>
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-64" value="ОС" checked disabled>
                         <label for="checkbox-64" class="checkbox-filter__label">ОС</label>
                     </div>
                 </div>
                 <div class="popup__checkbox">
                     <div class="checkbox-filter">
-                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-65" value="param3" checked>
+                        <input type="checkbox" class="checkbox-filter__input" id="checkbox-65" value="param3" checked disabled>
                         <label for="checkbox-65" class="checkbox-filter__label">param3</label>
                     </div>
                 </div>
@@ -2619,7 +2917,7 @@
                     </div>
                 </div>
             </div>
-            <div class="template-form__buttons">
+            <div class="template-form__buttons template-form__buttons_popup">
                 <button class="button button_green button_popup button_modal button_filter-add" type="button">Сохранить</button>
                 <button class="button button_gray button_popup button_filter-remove" type="reset">Отменить</button>
             </div>
@@ -2634,207 +2932,235 @@
             <div class="popup__wrapper popup__wrapper_no-line popup__wrapper_cols">                
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-33">
+                        <input type="checkbox" class="checkbox__input checkbox-cols" id="checkbox-33" checked disabled>
                         <label for="checkbox-33" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Дата</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-34">
+                        <input type="checkbox" class="checkbox__input checkbox-cols" id="checkbox-66" checked disabled>
+                        <label for="checkbox-66" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Подписчики</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox-cols" id="checkbox-67" checked disabled>
+                        <label for="checkbox-67" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Подписалось</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox-cols" id="checkbox-68" checked disabled>
+                        <label for="checkbox-68" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Отписалось</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-34" value="Ср. Время">
                         <label for="checkbox-34" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Ср. Время</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-35">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-35" value="Показы">
                         <label for="checkbox-35" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Показы</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-36">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-36" value="% отказов">
                         <label for="checkbox-36" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">% отказов</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-37">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-37" value="Клики">
                         <label for="checkbox-37" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Клики</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-38">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-38" value="CR">
                         <label for="checkbox-38" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">CR</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-39">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-39" value="CRC">
                         <label for="checkbox-39" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">CRC</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-40">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-40" value="CRn">
                         <label for="checkbox-40" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">CRn</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-41">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-41" value="EPC">
                         <label for="checkbox-41" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">EPC</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-42">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-42" value="Ратио">
                         <label for="checkbox-42" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Ратио</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-43">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-43" value="% пробива">
                         <label for="checkbox-43" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">% пробива</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-44">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-44" value="Ратио новости">
                         <label for="checkbox-44" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Ратио новости</span>
                     </div>
                 </div>
             </div>
             <p class="popup__subtitle popup__subtitle_cols">Лид</p>
-            <div class="popup__wrapper popup__wrapper_cols">                
+            <div class="popup__wrapper popup__wrapper_cols"> 
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-45">
+                        <input type="checkbox" class="checkbox__input checkbox-cols" id="checkbox-69" checked disabled>
+                        <label for="checkbox-69" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Лидов</span>
+                    </div>
+                </div>
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox-cols" id="checkbox-70" checked disabled>
+                        <label for="checkbox-70" class="checkbox__label checkbox__label_cols"></label>
+                        <span class="checkbox__text">Сумма</span>
+                    </div>
+                </div>               
+                <div class="popup__checkbox popup__checkbox_cols">
+                    <div class="checkbox checkbox_cols">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-45" value="CPL">
                         <label for="checkbox-45" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">CPL</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-46">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-46" value="Кол-во апрувов">
                         <label for="checkbox-46" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Кол-во апрувов</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-47">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-47" value="EPL">
                         <label for="checkbox-47" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">EPL</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-48">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-48" value="Кол-во невалидов">
                         <label for="checkbox-48" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Кол-во невалидов</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-49">
-                        <label for="checkbox-49" class="checkbox__label checkbox__label_cols"></label>
-                        <span class="checkbox__text">Кол-во лидов</span>
-                    </div>
-                </div>
-                <div class="popup__checkbox popup__checkbox_cols">
-                    <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-50">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-50" value="% отмен">
                         <label for="checkbox-50" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">% отмен</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-51">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-51" value="% апрува">
                         <label for="checkbox-51" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">% апрува</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-52">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-52" value="% апрувов">
                         <label for="checkbox-52" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">% апрувов</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-53">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-53" value="Заработано">
                         <label for="checkbox-53" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Заработано</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-54">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-54" value="% в ожидании">
                         <label for="checkbox-54" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">% в ожидании</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-55">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-55" value="Кол-во всего лидов">
                         <label for="checkbox-55" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Кол-во всего лидов</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-56">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-56" value="% невалидов">
                         <label for="checkbox-56" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">% невалидов</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-57">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-57" value="Кол-во отмен">
                         <label for="checkbox-57" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Кол-во отмен</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-58">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-58" value="Сумма в ожидании">
                         <label for="checkbox-58" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Сумма в ожидании</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-59">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-59" value="Кол-во в ожидании">
                         <label for="checkbox-59" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Кол-во в ожидании</span>
                     </div>
                 </div>
                 <div class="popup__checkbox popup__checkbox_cols">
                     <div class="checkbox checkbox_cols">
-                        <input type="checkbox" class="checkbox__input checkbox__input_cols" id="checkbox-60">
+                        <input type="checkbox" class="checkbox__input checkbox-cols checkbox-cols_no-check" id="checkbox-60" value="Сумма отмен">
                         <label for="checkbox-60" class="checkbox__label checkbox__label_cols"></label>
                         <span class="checkbox__text">Сумма отмен</span>
                     </div>
                 </div>
             </div>
-            <div class="template-form__buttons">
-                <button class="button button_green button_popup button_modal" type="button">Сохранить</button>
-                <button class="button button_gray button_popup" type="reset">Отменить</button>
+            <div class="template-form__buttons template-form__buttons_popup">
+                <button class="button button_green button_popup button_modal button_cols-add" type="button">Сохранить</button>
+                <button class="button button_gray button_popup button_cols-remove" type="reset">Отменить</button>
             </div>
         </div>
     </div>

@@ -328,13 +328,12 @@ closeButtoncols.addEventListener('click', closeColsPopup);
 // Add field from popup to table head
 
 const addingFields = document.querySelectorAll('.checkbox-filter__input_no-check');
-const filterWrapper = document.querySelector('.filters');
+const filterFields = document.querySelectorAll('.field_little');
 const saveButtonFilter = document.querySelector('.button_filter-add');
 const removeButtonFilter = document.querySelector('.button_filter-remove');
-const filterFields = document.querySelectorAll('.field_little');
 
 function addFilters() {
-    addingFields.forEach((el) => {
+    addingFields.forEach((el) => { 
         // const fieldValue = el.value;
         // const newField = document.createElement('input');        
         // newField.className = "field field_little";
@@ -347,8 +346,7 @@ function addFilters() {
                     elem.classList.remove('hide');
                 }
             })
-            // filterButton.before(newField);
-            // el.setAttribute("disabled", true);                     
+            // filterButton.before(newField);                    
         }
     });
 
@@ -365,3 +363,39 @@ function removeFilters() {
 
 saveButtonFilter.addEventListener('click', addFilters);
 removeButtonFilter.addEventListener('click', removeFilters);
+
+// Add cols from popup to table
+
+const colsWrapper = document.querySelector('.table__wrapper_stat');
+const colsRow = document.querySelectorAll('.table__row_stat');
+const addingCols = document.querySelectorAll('.checkbox-cols_no-check');
+const tableCols = document.querySelectorAll('.table-cell_stat');
+const saveColsButton = document.querySelector('.button_cols-add');
+const removeColsButton = document.querySelector('.button_cols-remove');
+
+function addCols() {
+    addingCols.forEach((el) => { 
+        if (el.checked) {
+            tableCols.forEach((elem) => {
+                if (el.value === elem.dataset.name) {
+                    elem.classList.remove('hide');
+                    colsWrapper.classList.add('table__wrapper_overflow');
+                    colsRow.forEach((row) => {
+                        row.style.borderBottom = 'none';
+                    })
+                }
+            })               
+        }
+    });
+
+    closeColsPopup();
+}
+
+function removeCols() {
+    addingCols.forEach((el) => {
+        el.checked = false;
+    });
+}
+
+saveColsButton.addEventListener('click', addCols);
+removeColsButton.addEventListener('click', removeCols);
