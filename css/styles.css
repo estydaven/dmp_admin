@@ -1548,6 +1548,12 @@ input:focus:-ms-input-placeholder {
 .daterangepicker td.start-date.end-date {
     border-radius: 0;
 }
+.daterangepicker.single .ranges {
+    display: none;
+}
+.daterangepicker.single .drp-calendar.left {
+    padding: 16px 0 25px 5px;
+}
 
 /* MEDIA QUERIES */
 

@@ -314,7 +314,7 @@ const saveButtonFilter = document.querySelector('.button_filter-add');
 const removeButtonFilter = document.querySelector('.button_filter-remove');
 
 function addFilters() {
-    addingFields.forEach((el) => { 
+    addingFields.forEach((el) => {
         // const fieldValue = el.value;
         // const newField = document.createElement('input');        
         // newField.className = "field field_little";
@@ -355,7 +355,7 @@ const saveColsButton = document.querySelector('.button_cols-add');
 const removeColsButton = document.querySelector('.button_cols-remove');
 
 function addCols() {
-    addingCols.forEach((el) => { 
+    addingCols.forEach((el) => {
         if (el.checked) {
             tableCols.forEach((elem) => {
                 if (el.value === elem.dataset.name) {
@@ -365,7 +365,7 @@ function addCols() {
                         row.style.borderBottom = 'none';
                     })
                 }
-            })               
+            })
         }
     });
 
@@ -383,14 +383,50 @@ removeColsButton.addEventListener('click', removeCols);
 
 // Custom date field
 
-$(".template-form__input_date").flatpickr({
-    "locale": "ru",
-    dateFormat: "d.m.y",
-    minDate: "01.01.22",
-    altInputClass: 'class',
+$(function () {
+    $('.template-form__input_date').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'), 10),
+        "locale": {
+            "format": "DD.MM.YYYY",
+            "separator": " - ",
+            "applyLabel": "Применить",
+            "cancelLabel": "Отменить",
+            "fromLabel": "С",
+            "toLabel": "По",
+            "customRangeLabel": "Свои даты",
+            "weekLabel": "Н",
+            "daysOfWeek": [
+                "Вс",
+                "Пн",
+                "Вт",
+                "Ср",
+                "Чт",
+                "Пт",
+                "Сб"
+            ],
+            "monthNames": [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь"
+            ],
+            "firstDay": 1
+        },
+    });
 });
 
-$(function() {
+$(function () {
 
     var start = moment().subtract(7, 'days');
     var end = moment();
@@ -403,13 +439,13 @@ $(function() {
         startDate: start,
         endDate: end,
         ranges: {
-           'Сегодня': [moment(), moment()],
-           'Вчера': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-           'Последние 7 дней': [moment().subtract(6, 'days'), moment()],
-           'Последние 30 дней': [moment().subtract(29, 'days'), moment()],
-           'Текущий месяц': [moment().startOf('month'), moment().endOf('month')],
-           'Прошлая неделя': [moment().subtract(7, 'days'), moment()],
-           'Текущая неделя':  [moment(), moment().endOf('week')],
+            'Сегодня': [moment(), moment()],
+            'Вчера': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Последние 7 дней': [moment().subtract(6, 'days'), moment()],
+            'Последние 30 дней': [moment().subtract(29, 'days'), moment()],
+            'Текущий месяц': [moment().startOf('month'), moment().endOf('month')],
+            'Прошлая неделя': [moment().subtract(7, 'days'), moment()],
+            'Текущая неделя': [moment(), moment().endOf('week')],
         },
         "locale": {
             "format": "DD/MM/YYYY",
@@ -444,7 +480,7 @@ $(function() {
                 "Декабрь"
             ],
             "firstDay": 1
-        }, 
+        },
         "alwaysShowCalendars": true,
     }, cb);
 
