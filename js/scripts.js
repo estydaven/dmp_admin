@@ -103,25 +103,6 @@ $('.button-reset').on('click', function () {
     }
 });
 
-// Custom date field
-
-$(".rangeDate").flatpickr({
-    emableTime: true,
-    mode: 'range',
-    dateFormat: "d.m.y",
-    minDate: "01.01.22",
-    defaultDate: ["21.06.2022", "25.06.2022"],
-    conjunction: " . ",
-    "locale": "ru"
-});
-
-$(".template-form__input_date").flatpickr({
-    "locale": "ru",
-    dateFormat: "d.m.y",
-    minDate: "01.01.22",
-    altInputClass: 'class',
-});
-
 // Custom file field
 
 (function (document, window, index) {
@@ -399,3 +380,74 @@ function removeCols() {
 
 saveColsButton.addEventListener('click', addCols);
 removeColsButton.addEventListener('click', removeCols);
+
+// Custom date field
+
+$(".template-form__input_date").flatpickr({
+    "locale": "ru",
+    dateFormat: "d.m.y",
+    minDate: "01.01.22",
+    altInputClass: 'class',
+});
+
+$(function() {
+
+    var start = moment().subtract(7, 'days');
+    var end = moment();
+
+    function cb(start, end) {
+        $('#reportrange').html(start.format('D.MM.YYYY') + ' - ' + end.format('D.MM.YYYY'));
+    }
+
+    $('#reportrange').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+           'Сегодня': [moment(), moment()],
+           'Вчера': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Последние 7 дней': [moment().subtract(6, 'days'), moment()],
+           'Последние 30 дней': [moment().subtract(29, 'days'), moment()],
+           'Текущий месяц': [moment().startOf('month'), moment().endOf('month')],
+           'Прошлая неделя': [moment().subtract(7, 'days'), moment()],
+           'Текущая неделя':  [moment(), moment().endOf('week')],
+        },
+        "locale": {
+            "format": "DD/MM/YYYY",
+            "separator": " - ",
+            "applyLabel": "Применить",
+            "cancelLabel": "Отменить",
+            "fromLabel": "С",
+            "toLabel": "По",
+            "customRangeLabel": "Свои даты",
+            "weekLabel": "Н",
+            "daysOfWeek": [
+                "Вс",
+                "Пн",
+                "Вт",
+                "Ср",
+                "Чт",
+                "Пт",
+                "Сб"
+            ],
+            "monthNames": [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь"
+            ],
+            "firstDay": 1
+        }, 
+        "alwaysShowCalendars": true,
+    }, cb);
+
+    cb(start, end);
+
+});
